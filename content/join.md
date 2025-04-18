@@ -8,9 +8,12 @@ url = '/join.html'
 
 ## 事前参加登録期間
 
-**4月22日(火) - 7月8日(火)　予定**  
+**4月22日(火) - 7月8日(火)**  
 ※円滑な年会運営のため、事前登録・事前支払いにご協力ください。
 
+<a class="btn btn-primary" href="https://iap-jp.org/pasj/conf" role="buton">
+PASJ2025 参加・発表申込システム
+<img src="images/external_link.svg" alt="link icon"></a><br>
 
 
 ## 参加区分・参加費
