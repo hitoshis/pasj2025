@@ -1,8 +1,9 @@
 +++
-date = '2025-03-06T19:56:37+09:00'
+date = '2025-04-22T19:56:37+09:00'
 draft = false
 title = '参加要項'
-hidden = true
+hidden = false
+description = 'に懇親会情報を追加しました。'
 url = '/join.html'
 +++
 
