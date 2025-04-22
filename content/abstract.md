@@ -2,7 +2,6 @@
 date = '2025-03-06T20:08:26+09:00'
 draft = false
 title = '発表申込要領およびプロシーディングス作成・提出について'
-hidden = true
 url = '/abstract.html'
 +++
 

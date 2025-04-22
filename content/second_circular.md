@@ -3,7 +3,6 @@ date = '2025-04-01T00:00:00+09:00'
 draft = false
 title = '第２回サーキュラー'
 url = '/second_circular.html'
-hidden = false
 +++
 
 [pdf file](./files/PASJ2025_2nd_circular.pdf) 

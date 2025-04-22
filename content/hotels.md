@@ -3,7 +3,6 @@ date = '2025-03-28T14:57:26+09:00'
 draft = false
 title = '宿泊案内'
 url = '/hotels.html'
-hidden = true
 +++
 
 ## 宿泊案内

@@ -3,7 +3,6 @@ date = '2025-04-01T14:57:26+09:00'
 draft = false
 title = '企業展示出展要領'
 url = '/company.html'
-hidden = false
 +++
 
 [pdf file](./files/PASJ2025_Exhibitor_Guide.pdf)   

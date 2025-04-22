@@ -3,7 +3,6 @@ date = '2025-03-03T11:42:59+09:00'
 draft = false
 title = '委員一覧'
 url = '/committee.html'
-hidden = true
 +++
 
 ## 実行委員会

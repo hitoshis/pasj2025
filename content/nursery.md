@@ -3,7 +3,6 @@ date = '2025-03-28T14:57:26+09:00'
 draft = false
 title = '託児案内'
 url = '/nursery.html'
-hidden = true
 +++
 
 ## 託児所案内

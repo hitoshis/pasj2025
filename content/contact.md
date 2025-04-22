@@ -3,7 +3,6 @@ date = '2025-03-28T14:57:26+09:00'
 draft = false
 title = '問い合わせ'
 url = '/contact.html'
-hidden = true
 +++
 
 ## 年会・発表申込に関するお問い合わせ

@@ -3,7 +3,6 @@ date = '2025-03-28T14:57:26+09:00'
 draft = false
 title = 'ご出展案内'
 url = '/booth_info.html'
-hidden = true
 +++
 
 ## 第22回日本加速器学会年会　ご出展を検討中の皆様
