@@ -1,2 +1,23 @@
 - date: "2025/04/22"
-  message: "事前参加登録を開始しました"
+  message: '事前参加登録を開始しました'
+
+- date: "2025/04/22"
+  message: '<a href="join.html">参加要項</a>に懇親会情報を追加しました。'
+
+- date: "2025/04/04"
+  message: '<a href="tour.html">施設見学会の不開催について</a>'
+
+- date: "2025/04/01"
+  message: '<a href="kondankai.html">第3回学生・企業/研究機関懇談会</a>の情報を更新しました。'
+
+- date: "2025/04/01"
+  message: '<a href="company.html">企業展示出展要領</a>の情報を更新しました'
+
+- date: "2025/04/01"
+  message: '<a href="second_circular.html">第２回サーキュラー</a>配信、発表申し込み開始'
+
+- date: "2025/03/28"
+  message: '<a href="company2.html">広告掲載募集要項</a>の情報を更新しました'
+
+- date: "2025/03/03"
+  message: '<a href="first_circular.html">第１回サーキュラー</a>配信'

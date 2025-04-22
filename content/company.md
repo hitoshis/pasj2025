@@ -2,7 +2,6 @@
 date = '2025-04-01T14:57:26+09:00'
 draft = false
 title = '企業展示出展要領'
-description = 'の情報を更新しました'
 url = '/company.html'
 hidden = false
 +++
