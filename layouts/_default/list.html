@@ -5,6 +5,11 @@
             <div class="information-box">
                 <h4>更新情報</h4>
                 <div class="h-75 overflow-y-auto">
+                    {{ with site.Data.news }}
+                    {{ range . }}
+                    <p style="margin-bottom: 0;">[{{ .date }}] {{ .message }}</p>
+                    {{ end }}
+                    {{ end }}
                     {{ range where .Site.RegularPages.ByDate.Reverse "Params.hidden" "!=" true }}
                     <p style="margin-bottom: 0;">[{{ .Date.Format "2006/01/02" }}] <a href="{{ .RelPermalink }}">{{
                             .Title }}</a> {{ .Params.description }}</p>
