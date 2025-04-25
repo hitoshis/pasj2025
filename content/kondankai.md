@@ -12,6 +12,16 @@ url = '/kondankai.html'
 行事担当理事 <span class="name">原田　寛之</span><br>
 </div>
 
+<a class="btn btn-secondary" href="https://form.run/@conf-bunken-L85xLA1MozrhpOr11coD" role="button">
+                学生・企業/研究機関懇談会申込み（学生のかた）
+                <img src="images/external_link.svg" alt="link icon">
+            </a>
+            <br>申し込み締め切り : <b>7月31日(金)</b><br>
+<a class="btn btn-secondary mt-3" href="https://form.run/@conf-bunken-VHQbZjXYJ8vtG6AoGUuO" role="button">
+                学生・企業/研究機関懇談会申込み（企業・研究機関のかた）
+                <img src="images/external_link.svg" alt="link icon">
+            </a>
+            <br>申し込み締め切り : <b>6月27日(金)</b>
 
 ## 目標
 
