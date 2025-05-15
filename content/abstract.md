@@ -8,7 +8,7 @@ url = '/abstract.html'
 ## 発表申込受付期間
 
 **4 月 1 日(月)  - ~5 月 9 日(金)~ 5月14(水) 24時(口頭発表)**   
-**4 月 1 日(月)  - ~5 月 9 日(金)~ 5月21(水) 24時(口頭発表)**  
+**4 月 1 日(月)  - ~5 月 9 日(金)~ 5月21(水) 24時(ポスター発表)**  
 <a class="btn btn-primary" href="https://iap-jp.org/pasj/conf/" role="button">
                 PASJ2025 参加・発表申込システム
                 <img src="images/external_link.svg" alt="link icon">
