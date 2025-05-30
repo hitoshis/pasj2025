@@ -11,17 +11,35 @@ document.addEventListener("DOMContentLoaded", () => {
             // カテゴリを収集してセレクトボックスに追加
             const categorySet = new Set();
             data.forEach(entry => {
-                const cat = entry.category_1 || "未分類";
+                const cat = entry.category_1 || "施設現状報告";
                 categorySet.add(cat);
             });
 
-            Array.from(categorySet).sort().forEach(cat => {
-                const opt = document.createElement("option");
-                opt.value = cat;
-                opt.textContent = cat;
-                select.appendChild(opt);
-            });
+            Array.from(categorySet)
+                .sort((a, b) => {
+                    const aKey = (a || "").trim();
+                    const bKey = (b || "").trim();
 
+                    if (!aKey) return 1;  // 空白・未分類を後ろへ
+                    if (!bKey) return -1;
+
+                    const aNum = aKey.match(/\d+/);
+                    const bNum = bKey.match(/\d+/);
+
+                    if (!aNum || !bNum) return aKey.localeCompare(bKey, "ja");
+
+                    return parseInt(aNum[0]) - parseInt(bNum[0]);
+                })
+                .forEach(cat => {
+                    const value = (cat || "").trim();
+                    const displayCat = value || "施設現状報告";
+
+                    const opt = document.createElement("option");
+                    opt.value = value;
+                    opt.textContent = displayCat;
+                    select.appendChild(opt);
+                });
+            renderSummaryTable(allData);
             // 最初に全データ表示
             renderTable("ALL");
 
@@ -32,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(error => {
-            table.innerHTML = "<tr><td colspan='2'>プログラムの取得に失敗しました!!!!。</td></tr>";
+            table.innerHTML = "<tr><td colspan='2'>プログラムの取得に失敗しました。</td></tr>";
             console.error("Fetch error:", error);
         });
 
@@ -40,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         table.innerHTML = ""; // クリア
 
         allData.forEach(entry => {
-            const category = entry.category_1 || "未分類";
+            const category = (entry.category_1 || "").trim(); // ← 元の値を使う
             if (categoryFilter !== "ALL" && category !== categoryFilter) return;
 
             const code = entry.submission_id || "NoCode";
@@ -66,6 +84,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
             table.appendChild(talkRow);
         });
+    }
+
+    function renderSummaryTable(data) {
+        const table = document.getElementById("summary-table").querySelector("tbody");
+        table.innerHTML = ""; // クリア
+
+        const categoryCount = new Map();
+        let total = 0;
+
+        data.forEach(entry => {
+            const cat = entry.category_1 || "施設現状報告";
+            categoryCount.set(cat, (categoryCount.get(cat) || 0) + 1);
+            total++;
+        });
+
+        // 総数行（最初に表示）
+        const totalRow = document.createElement("tr");
+        totalRow.innerHTML = `<td><b>総件数</b></td><td><b>${total}</b></td>`;
+        table.appendChild(totalRow);
+
+        // 各カテゴリ
+        Array.from(categoryCount.entries())
+            .sort((a, b) => {
+                const aKey = (a[0] || "").trim();
+                const bKey = (b[0] || "").trim();
+
+                if (!aKey) return 1;  // aが未分類なら後ろに
+                if (!bKey) return -1; // bが未分類なら後ろに
+
+                const aMatch = aKey.match(/\d+/);
+                const bMatch = bKey.match(/\d+/);
+
+                if (!aMatch || !bMatch) return aKey.localeCompare(bKey, "ja");
+
+                return parseInt(aMatch[0]) - parseInt(bMatch[0]);
+            })
+            .forEach(([cat, count]) => {
+                const displayCat = (cat || "").trim() || "施設現状報告";
+                const row = document.createElement("tr");
+                row.innerHTML = `<td>${displayCat}</td><td>${count}</td>`;
+                table.appendChild(row);
+            });
     }
 
 
