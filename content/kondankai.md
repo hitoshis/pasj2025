@@ -6,6 +6,8 @@ url = '/kondankai.html'
 +++
 
 
+<a href="images/kondankai_poster.pdf"><img src="images/kondankai_poster.jpg" width="200"></a>
+
 <div style="text-align: right;">
 学会活性化担当理事 <span class="name">坂上　和之</span><br>
 学会活性化委員<span class="name">想田　光</span><br>
