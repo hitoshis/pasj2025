@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<h2>発表件数集計</h2>
+<table id="summary-table" class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>カテゴリ</th>
+      <th>件数</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<p>
+  <label for="categoryFilter">カテゴリで絞り込み：</label>
+  <select id="categoryFilter">
+    <option value="ALL">すべて表示</option>
+  </select>
+</p>
+<table cellpadding="3" bgcolor="#ffffff" border="0" cellspacing="0" width="100%" id="program-table">
+</table>
+
+<script src="js/abstract.js"></script>
+{{ end }}
