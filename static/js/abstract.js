@@ -66,19 +66,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const authors = entry.coauthors || [];
 
             const talkRow = document.createElement("tr");
-            const abstractId = `abstract-${code}`;
-            const abstract = entry.abstract_ja || "（要旨なし）";
+            //const abstractId = `abstract-${code}`;
+            //const abstract = entry.abstract_ja || "（要旨なし）";
 
             talkRow.innerHTML = `
               <td valign="top" width="50" nowrap>
                 <b>${code}</b><br>
               </td>
               <td valign="top" align="left" width="100%">
-                <a href="#" onclick="toggleAbstract('${abstractId}'); return false;"><b>${title}</b></a><br>
+                <b>${title}</b><br>
                 ${renderAuthorsWithSuperscript(authors)}
-                <div id="${abstractId}" style="display: none; margin-top: 0.5em;">
-                  <b>要旨：</b><br>${abstract}
-                </div>
               </td>
             `;
 
