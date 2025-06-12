@@ -6,10 +6,6 @@ url = '/company.html'
 +++
 
 [pdf file](./files/PASJ2025_Exhibitor_Guide.pdf)   
-<a class="btn btn-success" href="https://form.run/@pasj2025-exhibition-form" role="button">
-                企業展示出展・広告掲載申し込み
-                <img src="images/external_link.svg" alt="link icon">
-            </a> 2025年4月8日（火）13時より<br>
 
 ## 出展料金
 

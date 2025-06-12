@@ -4,12 +4,6 @@ draft = false
 title = '広告掲載募集要項'
 url = '/company2.html'
 +++
-
-<a class="btn btn-success" href="https://form.run/@pasj2025-exhibition-form" role="button">
-                企業展示出展・広告掲載申し込み
-                <img src="images/external_link.svg" alt="link icon">
-            </a> 4月8日(火) 13:00より<br>
-
 <div style="text-align: right;">
 第22回日本加速器学会年会<br>  
 実行委員長 <span class="name">林崎　規託</span><br>
