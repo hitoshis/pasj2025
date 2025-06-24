@@ -7698,7 +7698,7 @@
         "department": "",
         "国": "",
         "発表形式2": "ポスター発表 [Poster]",
-        "title_ja": "KEK電子陽電子入射器におけるDockerを用いたArchiver Applianceの導入",
+        "title_ja": "KEK電子陽電子入射器におけるPodmanを用いたArchiver Applianceの導入",
         "title_en": "Introduction of Archiver Appliance Using Docker at the KEK electron/positron injector LINAC",
         "abstract_ja": "KEK電子陽電子入射器は、SuperKEKB電子リングおよび陽電子リング、PFリング、PF-ARの4つのリング、さらにSuperKEKBの陽電子ダンピングリングにビームを供給している。安定した運転の維持とさらなるビーム性能向上のためには、継続的な技術開発・研究と運転状況の詳細な把握が不可欠である。そのため、機器および周辺環境の多様な運転パラメータを記録するデータアーカイバシステムが重要な役割を担っている。KEK電子陽電子入射器では、データ取得ソフトウェアとしてArchiver Applianceを採用し、17万件以上の制御対象を効率的に収集・保存している。本発表では、システムの再現性向上、導入作業の簡素化、および運用効率の向上を目的として、Dockerを用いたArchiver Applianceのコンテナ化を実施した。本発表では、従来の仮想マシン環境での運用経験を踏まえて、Docker環境においてArchiver Applianceを構築した際に得られた知見について報告する。",
         "category_1": "A-10 加速器技術（加速器制御）",

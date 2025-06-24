@@ -80,31 +80,80 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     function renderTable(categoryFilter, sessionFilter, dateFilter) {
-        table.innerHTML = "";
+    table.innerHTML = "";
 
-        allData.forEach(entry => {
-            const category = (entry.category_1 || "").trim();
-            const session = entry.session || "未分類セッション";
-            const date = entry.date || "未定";
+    const filtered = allData.filter(entry => {
+        const category = (entry.category_1 || "").trim();
+        const session = entry.session || "未分類セッション";
+        const date = entry.date || "未定";
 
-            if ((categoryFilter !== "ALL" && category !== categoryFilter) ||
-                (sessionFilter !== "ALL" && session !== sessionFilter) ||
-                (dateFilter !== "ALL" && date !== dateFilter)) {
-                return;
+        return (categoryFilter === "ALL" || category === categoryFilter) &&
+               (sessionFilter === "ALL" || session === sessionFilter) &&
+               (dateFilter === "ALL" || date === dateFilter);
+    });
+
+    // セッションごとにグループ化
+    const sessionMap = new Map();
+
+    filtered.forEach(entry => {
+        const date = entry.date || "未定";
+        const session = entry.session || "未分類セッション";
+        const room = entry.room || "未定";
+
+        const key = [date, session, room].join("||");
+
+        if (!sessionMap.has(key)) {
+            sessionMap.set(key, []);
+        }
+
+        sessionMap.get(key).push(entry);
+    });
+
+    // 表示処理
+    Array.from(sessionMap.entries()).forEach(([key, entries]) => {
+        const [date, session, room] = key.split("||");
+
+        // --- 時間範囲を解析 ---
+        let startTimes = [], endTimes = [];
+
+        entries.forEach(entry => {
+            const timeStr = entry.time || "";
+            const match = timeStr.match(/^(\d{1,2}:\d{2})-(\d{1,2}:\d{2})$/);
+            if (match) {
+                startTimes.push(toMinutes(match[1]));
+                endTimes.push(toMinutes(match[2]));
             }
+        });
 
+        let sessionTimeRange = "";
+        if (startTimes.length && endTimes.length) {
+            const start = formatMinutes(Math.min(...startTimes));
+            const end = formatMinutes(Math.max(...endTimes));
+            sessionTimeRange = `${start} - ${end}`;
+        } else {
+            sessionTimeRange = "時間未定";
+        }
+
+        // --- セッションヘッダー行 ---
+        const headerRow = document.createElement("tr");
+        headerRow.innerHTML = `
+          <td colspan="2" style="background-color: #f0f0f0; font-weight: bold; padding: 0.5em; border-top: 2px solid #ccc;">
+            ${date} ${session}：${sessionTimeRange}　会場：${room}
+          </td>
+        `;
+        table.appendChild(headerRow);
+
+        // --- 各講演 ---
+        entries.forEach(entry => {
             const code = entry.talk_id || "NoCode";
             const title = entry.title_ja || "タイトル未定";
             const authors = entry.coauthors || [];
+            const abstract = entry.abstract_ja || "（要旨なし）";
+            const abstractId = `abstract-${code}`;
 
             const talkRow = document.createElement("tr");
-            const abstractId = `abstract-${code}`;
-            const abstract = entry.abstract_ja || "（要旨なし）";
-
             talkRow.innerHTML = `
-              <td valign="top" width="50" nowrap>
-                <b>${code}</b><br>
-              </td>
+              <td valign="top" width="50" nowrap><b>${code}</b><br></td>
               <td valign="top" align="left" width="100%">
                 <a href="#" onclick="toggleAbstract('${abstractId}'); return false;"><b>${title}</b></a><br>
                 ${renderAuthorsWithSuperscript(authors)}
@@ -113,10 +162,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               </td>
             `;
-
             table.appendChild(talkRow);
         });
+    });
+
+    // --- 内部関数：文字列時間 "9:10" → 分に変換 ---
+    function toMinutes(timeStr) {
+        const [h, m] = timeStr.split(":").map(Number);
+        return h * 60 + m;
     }
+
+    // --- 内部関数：分 → "HH:MM" 形式に戻す ---
+    function formatMinutes(mins) {
+        const h = Math.floor(mins / 60);
+        const m = mins % 60;
+        return `${h}:${m.toString().padStart(2, "0")}`;
+    }
+}
 /*
     function renderSummaryTable(data) {
         const table = document.getElementById("summary-table").querySelector("tbody");
