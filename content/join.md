@@ -10,6 +10,9 @@ url = '/join.html'
 **4月22日(火) - 7月8日(火)**  
 ※円滑な年会運営のため、事前登録・事前支払いにご協力ください。
 
+当日参加登録に関しては年会会期直前に参加登録システムを再度オープンします。  
+現地での当日参加登録の場合も本システムにて行います（現金支払いは受け付けません）。
+
 <a class="btn btn-primary" href="https://iap-jp.org/pasj/conf" role="buton">
 PASJ2025 参加・発表申込システム
 <img src="images/external_link.svg" alt="link icon"></a><br>
@@ -54,7 +57,7 @@ https://iap-jp.org/pasj/mypage/password_reset/
 ## 懇親会
 
 日時：2025年8月7日(木) 19:00 － 20:30 予定  
-会場：東京都市大学世田谷キャンパス 9号館（SAKURA CENTER）  
+会場：東京都市大学世田谷キャンパス 9号館（SAKURA CENTER）（年会会場内）  
 
 【事前支払】  
 一般：6,000円  
