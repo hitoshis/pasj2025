@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const dateSet = new Set();
 
             data.forEach(entry => {
-                const cat = entry.category_1 || "施設現状報告";
+                const cat = entry.category_1 || "未分類";
                 categorySet.add(cat);
 
                 const session = entry.session || "未分類セッション";
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const opt = document.createElement("option");
                 const value = (cat || "").trim();
                 opt.value = value;
-                opt.textContent = value || "施設現状報告";
+                opt.textContent = value || "未分類";
                 categorySelect.appendChild(opt);
             });
 
@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
         table.innerHTML = "";
 
         const filtered = allData.filter(entry => {
-            const category = (entry.category_1 || "").trim();
+            const raw = entry.category_1 || "";
+            const category = raw.trim() || "未分類";
             const session = entry.session || "未分類セッション";
             const date = entry.date || "未定";
 
