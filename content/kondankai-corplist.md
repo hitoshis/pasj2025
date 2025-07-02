@@ -1,7 +1,7 @@
 +++
 date = '2025-07-02T14:57:26+09:00'
-draft = false
-title = '学生・企業/研究機関懇談会 - 企業/研究機関一覧'
+draft = true
+title = '学生・企業/研究機関懇談会 - 企業/研究機関紹介'
 url = '/kondankai-corplist.html'
 +++
 
