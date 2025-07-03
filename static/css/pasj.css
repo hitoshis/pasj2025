@@ -79,3 +79,15 @@ h3 {
 .responsive-text {
     font-size: clamp(12px, 2vw, 24px);
 }
+
+/* for Program List*/
+.program-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border: none;
+}
+
+.program-table td {
+    padding: 3px;
+}
