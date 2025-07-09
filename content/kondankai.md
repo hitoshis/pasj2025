@@ -14,6 +14,9 @@ url = '/kondankai.html'
 行事担当理事 <span class="name">原田　寛之</span><br>
 </div>
 
+[出展企業・研究機関紹介ページ](kondankai-corplist.html)
+
+
 <a class="btn btn-secondary" href="https://form.run/@conf-bunken-L85xLA1MozrhpOr11coD" role="button">
                 学生・企業/研究機関懇談会申込み（学生のかた）
                 <img src="images/external_link.svg" alt="link icon">
