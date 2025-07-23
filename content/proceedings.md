@@ -5,9 +5,7 @@ title = 'プロシーディングスの作成・提出要領'
 url = '/proceedings.html'
 +++
 
-## プロシーディングについて
-
-### プロシーディングス提出
+## プロシーディングス提出
 
 事前に[発表申し込みシステム](https://iap-jp.org/pasj/conf/)からの入稿のみ受け付けます。  
 プロシーディングスの提出開始は7月中旬頃を予定しております。  
@@ -28,3 +26,17 @@ url = '/proceedings.html'
 
  [^1]: [https://www.pasj.jp/templates.html](https://www.pasj.jp/templates.html)  
  [^2]: [https://www.jacow.org/index.php?n=Authors.HomePage](https://www.jacow.org/index.php?n=Authors.HomePage) 
+
+## プロシーディングス編集作業への協力について
+
+プロシーディングス編集作業の負担を軽減し作業時間を短縮するため、発表者・著者の方を中心に、年会終了後に職場やご自宅等でプロシーディングス編集作業に協力いただける方を募集いたします。
+
+作業は登録いただいた方の中から20名程度に依頼し（編集論文数は平均20件/人程度を予定）、2ヶ月以内に正味１～２日程度の作業で完了することを目標としています。  
+作業内容は、書式不備や誤記の点検・修正（著者への修正依頼を含む）と、WEB公開に耐えるPDFファイルの作成です。  
+なお作業をお願いする方には、作業内容・方法等、詳細に関するマニュアルをご紹介し例年の説明会に代えさせていただきます。
+
+登録は発表申込とは独立に行なえます。参加いただける方は8月11日までに、以下のリンクから登録をお願いいたします。
+
+<a class="btn btn-primary" href="https://business.form-mailer.jp/fms/7bd11192301768" role="button">
+                プロシーディングス編集者受付
+                <img src="images/external_link.svg" alt="link icon"></a>
