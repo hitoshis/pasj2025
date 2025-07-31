@@ -402,7 +402,7 @@ url = '/industrial.html'
   <div class="row align-items-start">
     <div class="col-md-4 col-12">
    
-[power電器株式会社](https://www.wipot.jp/) 
+[power電器株式会社](https://bravebird.co.jp/) 
 
 <img src="images/industrial/KT52.png" alt="power電器株式会社" class="img-fluid">
     </div>
