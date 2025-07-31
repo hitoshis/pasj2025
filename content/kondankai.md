@@ -17,12 +17,6 @@ url = '/kondankai.html'
 [出展企業・研究機関紹介ページ](kondankai-corplist.html)
 
 
-<a class="btn btn-secondary" href="https://form.run/@conf-bunken-L85xLA1MozrhpOr11coD" role="button">
-                学生・企業/研究機関懇談会申込み（学生のかた）
-                <img src="images/external_link.svg" alt="link icon">
-            </a>
-            <br>申し込み締め切り : <b>7月31日(金)</b><br>
-
 ## 目標
 
 日本加速器学会では持続可能な学会を目指す取り組みを始めております。  
