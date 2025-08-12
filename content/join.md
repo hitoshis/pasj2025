@@ -10,12 +10,6 @@ url = '/join.html'
 **4月22日(火) - 7月8日(火)**  
 ※円滑な年会運営のため、事前登録・事前支払いにご協力ください。
 
-当日参加登録は7月30日(水)に再度オープンを致しました。  
-現地での当日参加登録の場合も本システムにて行います（現金支払いは受け付けません）。
-
-<a class="btn btn-primary" href="https://iap-jp.org/pasj/conf" role="buton">
-PASJ2025 参加・発表申込システム
-<img src="images/external_link.svg" alt="link icon"></a><br>
 
 
 ## 参加区分・参加費
