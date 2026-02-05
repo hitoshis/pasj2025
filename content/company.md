@@ -39,7 +39,7 @@ url = '/company.html'
 ```
 日本加速器学会　年会ヘルプデスク（担当：小西、佐藤）
 〒162-0801 東京都新宿区山吹町358-5　アカデミーセンター
-Email：pasj-desk@conf.bunken.co.jp
+Email：pasj-desk[_at_]conf[_dot_]bunken[_dot_]co[_dot_]jp
 ```
 
 ## 申込み締切日

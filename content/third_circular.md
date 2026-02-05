@@ -363,7 +363,7 @@ Zoomミーティング・ブレイクアウトルーム
 年会・発表申込に関するお問い合わせ  
 日本加速器学会年会ヘルプデスク  
 〒162-0801東京都新宿区山吹町 358-5 アカデミーセンター   
-Email：pasj-desk@conf.bunken.co.jp  
+Email：pasj-desk[_at_]conf[_dot_]bunken[_dot_]co[_dot_]jp  
 FAX：03-5227-8632   
 
 ＊広報・ウェブ委員募集中！＊  
